@@ -1,0 +1,19 @@
+{# INPUT TYPE TEXT, PASSWORD, EMAIL #}
+{% macro input(type, name, value, placeholder, other) %}
+	<input type="{{ type }}" name="{{ name }}" value="{{ value }}" placeholder="{{ placeholder }}" class="{{ other }}" />
+{% endmacro %}
+
+
+{# INPUT TYPE TEXTAREA #}
+{% macro textarea(name, value, placeholder, other) %}
+	<textarea name="{{ name }}" placeholder="{{ placeholder }}" class="{{ other }}" style="height:200px">{{ value }}</textarea>
+{% endmacro %}
+
+
+{# INPUT TYPE SUBMIT #}
+{% macro button(type, value, other) %}
+	<button type="{{ type }}" name="{{ type }}" class="{{ other }}" style="margin-top:16px">{{ value }}</button>
+{% endmacro %}
+
+
+

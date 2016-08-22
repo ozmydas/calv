@@ -1,0 +1,63 @@
+C.A.L.V DOCUMENTATION
+
+@CRUD
+
+* Magic CRUD-READ
+// load Core > Crud
+Crud::read ( your_sql_statement_here , where_value_in_array )
+
+* Magic CRUD-CREATE
+// load Core > Crud
+// columns_values = array (  'column' => 'values' , );
+Crud::insert ( table_name , columns_in_array )
+
+* Magic CRUD-EDIT
+// load Core > Crud
+// columns_values = array (  'column' => 'values' , );
+Crud::edit ( table_name , columns_values_in_array , where_statement , where_values_in_array )
+
+* Magic CRUD-DELETE
+// load Core > Crud
+// where_statement  = 'id_user = 1';
+Crud::delete ( table_name , where_statement )
+
+
+@LINK & IMAGE
+
+* Auto Link
+// load Core > Url
+Url::link ( http_link , text )
+
+* Auto Redirect
+// load Core > Url
+// true/false open in new tab
+Url::redir ( http_link , true )
+
+* Auto Redirect Back
+// load Core > Url
+Url::redir (back)
+
+* Auto Paging
+// load Core > Url
+// total_data = count_array ($read_result);
+// no_page = $_GET['page'];
+Url::page ( total_data , data_perpage , no_page )
+
+* Image
+// load Core > Url
+// other like class or width
+Url::img ( img_url , title_alt_text , other )
+
+
+@FORM & INPUT
+
+*Form Input
+// load Core > Form
+// other = 'class="some" pattern="regex" required';
+Form::text ( name , value , other )
+Form::pass ( name , value , other )
+Form::radio ( name , value , other )
+Form::area ( name, value, other )
+
+// true/false multiple upload if true name must end with []
+Form::file (name , true)
