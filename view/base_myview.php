@@ -6,12 +6,20 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title><?=$page_title;?></title>
-<link rel="stylesheet" type="text/css" href="<?=$site_url;?>assets/css/base.css">
+<link rel="stylesheet" type="text/css" href="<?=$site_url;?>assets/css/mycss.css">
 <link rel="stylesheet"type="text/css" href="<?=$site_url;?>assets/css/bootstrap.css"/>
-<script type="text/javascript" src="<?=$site_url;?>assets/js/jquery.min.js" ></script>
+<link rel="stylesheet"type="text/css" href="<?=$site_url;?>assets/css/datatables.css"/>
+
+<script type="text/javascript" src="<?=$site_url;?>assets/js/jquery3.min.js" ></script>
 <script type="text/javascript" src="<?=$site_url;?>assets/js/bootstrap.js" ></script>
+<script type="text/javascript" src="<?=$site_url;?>assets/js/datatables.js" ></script>
 
 <style>
+body{
+width: 100%;
+padding:0;
+margin:0;
+}
 
 header > a{
 color:#333;text-decoration:none;
@@ -23,8 +31,8 @@ color:#333;text-decoration:none;
 <body>
 
 <header>
-	<a href="./">CALV</a> 
-	<div>mini Framework</div>
+	<a href="./"><?=$app_title?></a> 
+	<div><?=$app_subtitle?></div>
 </header>
 
 <div class="content">
@@ -32,11 +40,17 @@ color:#333;text-decoration:none;
 </div>
 
 <footer>
-	<h4>Powered by <a href="http://narugacu.ga/calv/">CALV mini Framework</a></h4>
-	<div>
-<span id="l"><a href="http://fb.com/taufiqhisyam">TaufiqHisyam</a></span> <span id="r">©2015-2016</span>
-</div>
+	<h4>Powered by <a href="http://github/ozmydas/calv/">CALV mini Framework</a></h4>
 </footer>
 
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+
+$('#datatabel').DataTable();
+
+});
+</script>
+

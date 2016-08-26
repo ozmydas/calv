@@ -93,8 +93,8 @@ public static function option($name,$option,$default,$other=NULL){
 }
 
 
-public static function submit($name,$other=NULL){
-	echo "<input type='submit' name='$name' value='$name' $other /><br/>";
+public static function submit($name, $value, $other=NULL){
+	echo "<input type='submit' name='$name' value='$value' $other /><br/>";
 }
 
 

@@ -17,7 +17,7 @@ $config = [
 
 'Default_Language' => "id", //your default language (en,id,jp,de,etc)
 
-'Default_Controller' => "home/index", //default loaded controller when not defined
+'Default_Controller' => "myapp/index", //default loaded controller when not defined
 
 
 /*******
@@ -56,7 +56,7 @@ Log and Protection
 
 'Error_Log' => true, //create error logging or not (true/false)
 
-'CSRF_Guard' => true, //Cross-Site Request Forgery Protection
+'CSRF_Guard' => false, //Cross-Site Request Forgery Protection
 
 'CSRF_Exclude' => array(), //Route that will bypasse CSRF protection (eg: for API)
 
